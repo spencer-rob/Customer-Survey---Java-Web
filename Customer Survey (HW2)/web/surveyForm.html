@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Survey</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1 style="color:teal">Survey</h1>
+            <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+            <form action="surveyJSP.jsp" method="get">
+                <h1 style="color:teal">Your information:</h1>
+                
+                <label> First Name: </label><input type="text" name ="firstName"><br>
+                <label> Last Name: </label><input type="text" name ="lastName"><br>
+                <label> Email: </label><input type="text" name ="email"><br>
+                
+                <h1 style="color:teal">How did you hear about us?</h1>
+                <input type="radio" name="heardAbout" value="Search Engine">Search Engine
+                <input type="radio" name="heardAbout" value="Word of mouth">Word of mouth 
+                <input type="radio" name="heardAbout" value="Social Media">Social Media 
+                <input type="radio" name="heardAbout" value="Other">Other 
+                
+                <h1 style="color:teal">Would you like to receive announcements about new CDs and special offers?</h1>
+                <input type="checkbox" name="offer" value="Yes"> YES, I'd like that. <br>
+                <br>
+                Please contact me by:
+                <select name="contact">
+                    <option value="Email" selected>Email</option>
+                    <option value="Postal" selected>Postal mail</option>
+                </select> 
+                                
+                <input type="submit" name ="Submit">             
+        </div>
+        
+    </body>
+</html>
